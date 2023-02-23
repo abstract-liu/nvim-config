@@ -10,6 +10,10 @@ return require('packer').startup(function(use)
     -- auto closer
     use 'jiangmiao/auto-pairs'
 
+    -- indent blanline
+    use("lukas-reineke/indent-blankline.nvim")
+
+
     -- complete
     use 'neovim/nvim-lspconfig' 
     use 'hrsh7th/cmp-nvim-lsp'
@@ -20,6 +24,9 @@ return require('packer').startup(function(use)
 
     -- highlight
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+
+    -- buffer line
+    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
 
     -- file explorer
