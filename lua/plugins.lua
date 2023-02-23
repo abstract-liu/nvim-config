@@ -13,6 +13,8 @@ return require('packer').startup(function(use)
     -- indent blanline
     use("lukas-reineke/indent-blankline.nvim")
 
+    -- status line
+    use("nvim-lualine/lualine.nvim")
 
     -- complete
     use 'neovim/nvim-lspconfig' 
