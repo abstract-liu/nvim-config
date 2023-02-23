@@ -18,6 +18,10 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-cmdline'
     use 'hrsh7th/nvim-cmp'
 
+    -- highlight
+    use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+
+
     -- file explorer
     use {
   'nvim-tree/nvim-tree.lua',
