@@ -1,8 +1,6 @@
 return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 
-	use("github/copilot.vim")
-
 	-- theme
 	use("doums/darcula")
 	use("morhetz/gruvbox")
@@ -31,7 +29,7 @@ return require("packer").startup(function(use)
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
 
 	-- formatter
-	use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
+	-- use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
 
 	-- file explorer
 	use({

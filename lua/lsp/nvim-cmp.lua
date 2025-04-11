@@ -56,5 +56,5 @@ local cmp = require'cmp'
   -- Set up lspconfig.
   local capabilities = require('cmp_nvim_lsp').default_capabilities()
   require'lspconfig'.solargraph.setup{}
-require'lspconfig'.tsserver.setup{}
+require'lspconfig'.ts_ls.setup{}
 require'lspconfig'.gopls.setup{}
