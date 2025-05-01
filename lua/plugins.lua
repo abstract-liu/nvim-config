@@ -2,12 +2,16 @@ return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 
 -- Interface enhancement
+
     -- theme
 	use("doums/darcula")
 	use("morhetz/gruvbox")
 
-	-- indent blanline
+	-- indent blankline
 	use("lukas-reineke/indent-blankline.nvim")
+
+	-- buffer line
+	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
 
 	-- auto closer
 	use("jiangmiao/auto-pairs")
@@ -27,8 +31,6 @@ return require("packer").startup(function(use)
 	-- highlight
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 
-	-- buffer line
-	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
 
 	-- formatter
 	-- use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
