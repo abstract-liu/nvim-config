@@ -1,10 +1,11 @@
 require("basic")
-require("plugins")
 require("colorscheme")
 require("keybindings")
+require("plugins")
 
+require("plugin-config/indent-blankline")
+require("plugin-config/lualine")
 require("plugin-config/nvim-tree")
 require("plugin-config/treesitter")
-require("plugin-config/lualine")
 
 require("lsp/nvim-cmp")

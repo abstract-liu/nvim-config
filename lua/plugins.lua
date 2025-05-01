@@ -1,15 +1,17 @@
 return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 
-	-- theme
+-- Interface enhancement
+    -- theme
 	use("doums/darcula")
 	use("morhetz/gruvbox")
+
+	-- indent blanline
+	use("lukas-reineke/indent-blankline.nvim")
 
 	-- auto closer
 	use("jiangmiao/auto-pairs")
 
-	-- indent blanline
-	use("lukas-reineke/indent-blankline.nvim")
 
 	-- status line
 	use("nvim-lualine/lualine.nvim")
