@@ -1,6 +1,11 @@
 return {
   {
     "folke/snacks.nvim",
+    opts = {
+      explorer = {
+        replace_netrw = false,
+      },
+    },
     keys = {
       -- Deprecated Old
       { "<leader><space>", map = false, desc = "(Deprecated) Find Files (Root Dir)" },
@@ -11,7 +16,7 @@ return {
       { "<leader>e", LazyVim.pick("files"), desc = "Find Files (Root Dir)" },
 
       -- Explorer
-      { "<leader>1", "<leader>fe", desc = "Explorer Snacks (root dir)", remap = true },
+      { "<leader>1", "<leader>fe", desc = "Explorer Snacks (Root Dir)", remap = true },
     },
   },
 }

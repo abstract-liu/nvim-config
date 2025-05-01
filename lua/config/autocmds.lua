@@ -6,3 +6,13 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+vim.api.nvim_create_augroup("valkyrie", { clear = true })
+vim.api.nvim_create_augroup("VimDebug", { clear = true })
+
+-- auto open explorer when enter vim
+vim.api.nvim_create_autocmd("VimEnter", {
+  group = "valkyrie",
+  callback = function(ev)
+    Snacks.explorer({ cwd = LazyVim.root() })
+  end,
+})
