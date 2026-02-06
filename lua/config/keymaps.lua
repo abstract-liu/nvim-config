@@ -14,3 +14,8 @@ end, { desc = "Terminal (Root Dir)" })
 
 -- Terminal Mappings
 map("t", "<C-`>", "<cmd>close<cr>", { desc = "Debug Hide Terminal" })
+
+-- format
+map("n", "<leader>l", function()
+  vim.lsp.buf.format({ async = true })
+end, { desc = "Format document" })
