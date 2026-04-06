@@ -34,7 +34,11 @@ NVIM_BIN_LINK="${INSTALL_DIR}/nvim"
 NVIM_BIN_TARGET="${NVIM_DIR_TARGET}/bin/nvim"
 
 TARBALL_NAME="nvim-${PLATFORM}.tar.gz"
-TARBALL_URL="https://github.com/neovim/neovim/releases/download/${NVIM_VERSION}/${TARBALL_NAME}"
+if [[ "$OS" == "Linux" ]]; then
+  TARBALL_URL="https://github.com/neovim/neovim-releases/releases/download/${NVIM_VERSION}/${TARBALL_NAME}"
+else
+  TARBALL_URL="https://github.com/neovim/neovim/releases/download/${NVIM_VERSION}/${TARBALL_NAME}"
+fi
 
 TMPDIR="$(mktemp -d)"
 cleanup() { rm -rf "$TMPDIR"; }
