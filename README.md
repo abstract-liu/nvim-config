@@ -7,3 +7,5 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 - [ ] jump to implement
 - [ ] test
+- [ ] https://tree-sitter.github.io/tree-sitter/6-contributing.html#building
+
